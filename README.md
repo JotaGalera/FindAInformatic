@@ -19,6 +19,15 @@ Los informáticos podrán crear/modificar su currículum, así como aceptar o de
 - Como sistema operativo: Ubuntu 18.04 , no creo que haga falta explicar el por qué.
 - Como infraestructura virtual , en un inicio partiremos de intentar utilizar Azure, abierto a cambios futuros.
 
+### Explicación de infraestructura
+
+Azure permite compilar, implementar y administrar aplicaciones.
+
+Se selecciona la región de los datacenters donde estará tu servicio y el tipo de servicio.
+Seleccionas las características(RAM, espacio en disco, ...).
+
+Entre los servicios de Azure se dispone de infraestructuras(como máquinas virtuales, redes, ...) y plataformas. Todo ello con todo tipo de compatibilidad: Linux, Oracle, iOS, Andorid, etc.
+
 ### Cómo llebar a cabo dicha infraestructura
 
 [Guia a la espera de prueba](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)
