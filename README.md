@@ -2,6 +2,7 @@
 
 Aplicación en fase de producción para la asignatura de Infraestructuras Virtuales.
 
+
 ###Breve descripción:
 El proyecto consistirá en un servicio web, en el que un cliente podrá contratar para un trabajo a un informático de una lista en función de sus necesidades y/o cualidades(curriculum) del informático.
 
