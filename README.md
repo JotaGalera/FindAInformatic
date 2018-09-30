@@ -28,6 +28,6 @@ Seleccionas las características(RAM, espacio en disco, ...).
 
 Entre los servicios de Azure se dispone de infraestructuras(como máquinas virtuales, redes, ...) y plataformas. Todo ello con todo tipo de compatibilidad: Linux, Oracle, iOS, Andorid, etc.
 
-### Cómo llebar a cabo dicha infraestructura
+### Cómo llebar a cabo dicha infraestructura:
 
 [Guia a la espera de prueba](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)
