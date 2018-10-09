@@ -3,4 +3,4 @@ install:
 	pip3 install pytest
 
 test:
-	pytest
+	cd ./src/ && pytest
