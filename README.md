@@ -15,10 +15,12 @@ Los informáticos podrán crear/modificar su currículum, así como aceptar o de
 
 - Como lenguaje de programación se utilizará Python, es un lenguaje que está muy vivo en estos momentos y me gustaría aprender todo lo que pueda sobre él.
 - Se utilizará el framework "Flask" que nos permite crear aplicaciones web rápidamente. Además cuenta con licencia BSD(licencia de software libre permisiva).
-- Como editor de texto utilizaremos Atom, además añadiremos los pluggins que facilitan la escritura en MarkDown y la propia generación del PDF.
+- Utilizaremos "virtualenv" como entorno virtual para python, es el recomendado para programar en este lenguaje, de esta manera aislaremos el proyecto de nuestro propio sistema.
 - Como base de datos en un principio pienso utilizar MariaDB(a la espera de un muy posible cambio a otro tipo, a poder ser "no relacional" para aprender a utilizarlas.)
 - Como infraestructura virtual , en un inicio partiremos de intentar utilizar Azure, abierto a cambios futuros.
 - Como herramienta de testeo para python se utilizará Pytest, ya que facilita mucho la ejecución de estos con una simple orden.
+
+
 
 ### Explicación de infraestructura:
 
@@ -33,4 +35,8 @@ Entre los servicios de Azure se dispone de infraestructuras(como máquinas virtu
 
 [Guia a la espera de prueba](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)
 
-###
+### Integración Continua
+
+Hemos creado una clase inicial ("Informatic"), con una funcionalidad básica la cual realiza un return de true, esta funcionalidad se utiliza para comprobar el buen funcionamiento de nuestro test a través de Travis-CI.
+
+Travis-CI ofrece un servicio de ___Integración continua___(Práctica de fusionar las copias de trabajo en un repositorio centarl de forma periódica, tras la cual se ejecutan versiones y pruebas automáticas). Este servicio cuenta con una licencia de software libre y trabaja con Git de una forma sencilla y fácil de utilizar.
