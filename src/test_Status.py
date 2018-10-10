@@ -1,7 +1,7 @@
 #import bin.main
 import unittest
 import flask
-from mainProject import Informatic
+from src.mainProject import Informatic
 
 app = flask.Flask(__name__)
 
