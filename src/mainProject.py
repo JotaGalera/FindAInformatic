@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 
 class Informatic:
+
     def __init__(self):
         self.name = " "
         self.cv = " "
