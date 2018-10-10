@@ -8,4 +8,4 @@ install:
   - pip install -r requeriments.txt
 
 script:
-  -make test
+  - make test
