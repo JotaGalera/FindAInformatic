@@ -37,6 +37,6 @@ Entre los servicios de Azure se dispone de infraestructuras(como máquinas virtu
 
 ### Integración Continua
 
-Hemos creado una clase inicial ("Informatic"), con una funcionalidad básica la cual realiza un return de true, esta funcionalidad se utiliza para comprobar el buen funcionamiento de nuestro test a través de Travis-CI.
+Hemos creado una clase inicial ("Informatic"), con una funcionalidad básica la cual realiza un return de true, esta funcionalidad se utiliza para comprobar el buen funcionamiento de nuestro test a través de Travis-CI. Dicha clase tendrá en un futuro datos de los informáticos que se registren en el sistema, al igual que el resto de funcionalidad de estos en el sistema, como puede ser subir un CV, modificarlo, etc...
 
 Travis-CI ofrece un servicio de ___Integración continua___(Práctica de fusionar las copias de trabajo en un repositorio centarl de forma periódica, tras la cual se ejecutan versiones y pruebas automáticas). Este servicio cuenta con una licencia de software libre y trabaja con Git de una forma sencilla y fácil de utilizar.
