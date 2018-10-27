@@ -21,5 +21,6 @@ class testProject(unittest.TestCase):
     def test_changeAge(self):
         self.assertEqual(self.inf.changeAge(25),25,"Edad cambiada")
 
+
 if __name__ == '__main__':
     unittest.main()
