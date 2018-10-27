@@ -21,7 +21,6 @@ Los informáticos podrán crear/modificar su currículum, así como aceptar o de
 - Como herramienta de testeo para python se utilizará Pytest, ya que facilita mucho la ejecución de estos con una simple orden.
 
 
-
 ### Explicación de infraestructura:
 
 Azure permite compilar, implementar y administrar aplicaciones.
