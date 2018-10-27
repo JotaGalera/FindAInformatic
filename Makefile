@@ -3,4 +3,4 @@ install:
 
 
 test:
-	cd ./src/ && python3 test_Status.py
+	pytest
