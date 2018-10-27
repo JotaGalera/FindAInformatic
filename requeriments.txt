@@ -1,3 +1,0 @@
-Flask==1.0.2
-Pytest==3.8.2
-Virtualenv==16.0.0
