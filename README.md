@@ -35,8 +35,38 @@ Entre los servicios de Azure se dispone de infraestructuras(como máquinas virtu
 
 [Guia a la espera de prueba](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)
 
-### Integración Continua
+### Descripción de la clase e Integración continua
 
-Hemos creado una clase inicial ("Informatic"), con una funcionalidad básica la cual realiza un return de true, esta funcionalidad se utiliza para comprobar el buen funcionamiento de nuestro test a través de Travis-CI. Dicha clase tendrá en un futuro datos de los informáticos que se registren en el sistema, al igual que el resto de funcionalidad de estos en el sistema, como puede ser subir un CV, modificarlo, etc...
+Hemos creado una clase inicial ("Informatic"), con una funcionalidad básica la cual realiza un return de true, esta funcionalidad se utiliza para comprobar el buen funcionamiento de nuestro test a través de Travis-CI. Además en dicha clase contiene los atributos de cada informático, nombre, curriculum y edad. Dicha clase ofrece la funcionalidad de modificar esos datos y/o de mostrarlos. Travis confirma que las funciones de modificación son correctas, mediante la comprobación del cambio y comparación de resultado(test_Status.py).
 
-Travis-CI ofrece un servicio de ___Integración continua___(Práctica de fusionar las copias de trabajo en un repositorio centarl de forma periódica, tras la cual se ejecutan versiones y pruebas automáticas). Este servicio cuenta con una licencia de software libre y trabaja con Git de una forma sencilla y fácil de utilizar.
+Travis-CI ofrece un servicio de ___Integración continua___(Práctica de fusionar las copias de trabajo en un repositorio central de forma periódica, tras la cual se ejecutan versiones y pruebas automáticas). Este servicio cuenta con una licencia de software libre y trabaja con Git de una forma sencilla y fácil de utilizar.
+
+### Instalación
+
+Realizar un fork al proyecto, situarse sobre él en el entorno y realizar el comando:
+~~~~
+pip install -r requeriments.txt
+~~~~
+
+### Comprobación de los test
+
+Sobre la raíz del proyecto realizar:
+
+~~~~
+pytest
+~~~~
+
+o bien:
+
+~~~~
+pytest src/test_Status.py
+~~~~
+Los resultados saldrán inmediatos.
+
+### Arrancar la aplicación
+
+Realizar el comando:
+
+~~~~
+python3 mainProject.py
+~~~~
