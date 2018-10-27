@@ -50,13 +50,10 @@ pip install -r requeriments.txt
 ### Comprobación de los test
 
 Sobre la raíz del proyecto realizar:
-
 ~~~~
 pytest
 ~~~~
-
 o bien:
-
 ~~~~
 pytest src/test_Status.py
 ~~~~
