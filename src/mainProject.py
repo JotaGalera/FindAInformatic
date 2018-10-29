@@ -1,4 +1,5 @@
 from flask import Flask
+import json
 
 app = Flask(__name__)
 
@@ -9,6 +10,12 @@ class Informatic:
         self.name = name
         self.cv = cv
         self.age = edad
+
+    @app.route('/')
+    def js(sel):
+        dato={ "status": "OK","ejemplo": { "ruta": "/ruta/parametro","valor": "{JSON: devuelto}"} }
+        json = json.dump(dato)
+        return json
 
     @app.route('/status')
     def statusFun(self):
