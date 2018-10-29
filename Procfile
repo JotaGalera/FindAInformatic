@@ -1,1 +1,1 @@
-web: find-a-informatic application:app
+web: gunicorn application:app
