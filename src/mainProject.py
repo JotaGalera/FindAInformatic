@@ -11,11 +11,7 @@ class Informatic:
         self.cv = cv
         self.age = edad
 
-    @app.route('/')
-    def js():
-        dato={ "status": "OK" }
-        asd = json.dumps(dato)
-        return asd
+    
 
     @app.route('/status')
     def statusFun(self):
