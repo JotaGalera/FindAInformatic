@@ -12,10 +12,10 @@ class Informatic:
         self.age = edad
 
     @app.route('/')
-    def js(sel):
-        dato={ "status": "OK","ejemplo": { "ruta": "/ruta/parametro","valor": "{JSON: devuelto}"} }
-        json = json.dump(dato)
-        return json
+    def js():
+        dato={ "status": "OK" }
+        asd = json.dumps(dato)
+        return asd
 
     @app.route('/status')
     def statusFun(self):
