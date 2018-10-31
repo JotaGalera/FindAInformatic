@@ -4,6 +4,7 @@
 
 [![Build Status](https://travis-ci.org/JotaGalera/FindAInformatic.svg?branch=master)](https://travis-ci.org/JotaGalera/FindAInformatic)
 
+
 ### Breve descripción:
 El proyecto consistirá en un servicio web, en el que un cliente podrá contratar para un trabajo a un informático de una lista en función de sus necesidades y/o cualidades(curriculum) del informático.
 
@@ -66,3 +67,10 @@ Realizar el comando:
 ~~~~
 python3 mainProject.py
 ~~~~
+
+### Despligue sobre Heroku [![](https://www.herokucdn.com/deploy/button.svg)](https://findainformatic.herokuapp.com/)
+
+La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en:
+[Documentación Heroku](https://jotagalera.github.io/FindAInformatic/Heroku)
+
+*  Enlace al despliegue provisional:[Despliegue](https://findainformatic.herokuapp.com/)

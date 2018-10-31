@@ -16,9 +16,11 @@ Una vez nos encontramos logueados preparamos la aplicación, para ello clonamos 
 git clone https://github.com/JotaGalera/FindAInformatic
 ~~~~
 
-Dentro de Heroku en la pestaña Depploy, debemos tener activado el apartado "App connected to GitHub" y "Automatic deploys":
+Dentro de Heroku en la pestaña Depploy, debemos tener activado el apartado "App connected to GitHub" y "Automatic deploys", de esta manera basta con hacer push sobre el propio repositorio para realizar una actualización y despliegue automático de nuestra aplicación:
 
 ![](./imgs/deployment-method.png)
+
+***NOTA***: Marcar la casilla de "Wait for CI to pass before deploy". De esta manera hasta que no pase el test de Travis, no se desplegará la aplicación.
 
 Ahora nos movemos a ese repositorio:
 ~~~~
