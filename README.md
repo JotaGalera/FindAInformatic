@@ -66,26 +66,3 @@ Realizar el comando:
 ~~~~
 python3 mainProject.py
 ~~~~
-
-### Instalación y configuración de Heroku:
-
-Primeramente necesitamos tener Heroku en nuestra máquina, para ello escribimos desde la terminal:
-~~~~
-sudo snap install heroku --classic
-~~~~
-
-Una vez instalado nos loggeamos en Heroku mediante:
-~~~~
-heroku login
-~~~~
-Nos pedira nuestro usuario y contraseña con el que nos hemos registrado en la página.
-
-Una vez nos encontramos logueados preparamos la aplicación, para ello clonamos el repositorio(desde Git Hub) deseado donde tenemos los archivos de la aplicación en nuestra maquina(en mi caso sería) :
-~~~~
-git clone https://github.com/JotaGalera/FindAInformatic
-~~~~
-
-Ahora nos movemos a ese repositorio:
-~~~~
-cd FindAInformatic
-~~~~
