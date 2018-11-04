@@ -11,7 +11,6 @@ class Informatic:
         self.cv = cv
         self.age = edad
 
-    
 
     @app.route('/status')
     def statusFun(self):
