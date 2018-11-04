@@ -45,7 +45,7 @@ Travis-CI ofrece un servicio de ___Integración continua___(Práctica de fusiona
 
 Realizar un fork al proyecto, situarse sobre él en el entorno y realizar el comando:
 ~~~~
-pip install -r requeriments.txt
+pip install -r requirements.txt
 ~~~~
 
 ### Comprobación de los test
