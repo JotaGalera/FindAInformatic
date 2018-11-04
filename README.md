@@ -74,3 +74,4 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 [Documentación Heroku](https://jotagalera.github.io/FindAInformatic/Heroku)
 
 *  Enlace al despliegue provisional:[Despliegue](https://findainformatic.herokuapp.com/)
+En dicho enlace podemos comprobar que si añadimos a la url "/ruta/un-parametro-cualquiera" lo reconoce y lo muestra por pantalla(Ejemplo:[https://findainformatic.herokuapp.com/ruta/jota](https://findainformatic.herokuapp.com/ruta/jota))
