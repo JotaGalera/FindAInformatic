@@ -65,7 +65,7 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 
 > Cambiando el nombre, "Javier", por cualquier otro lo reconoce.
 
-* Mostrar los datos de un usuario/informáticos (Preestablecido por ahora): [showData](https://findainformatic.herokuapp.com/changeName/NuevoNombre)
+* Mostrar los datos de un usuario/informáticos (Preestablecido por ahora): [showData](https://findainformatic.herokuapp.com/showData)
 
 > Muestra los datos de un ususario. Actualmente uno predefinido.
 
