@@ -33,7 +33,6 @@ def changeAge(newage):
 
 @app.route('/showData')
 def showAll():
-    #datos = json.dumps(inf.showData())
     return jsonify(inf.showData())
 
 
