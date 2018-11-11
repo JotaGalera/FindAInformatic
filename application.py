@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask,request,jsonify
 from src.mainProject import Informatic
 import json
 
@@ -9,14 +9,12 @@ inf = Informatic("Jota","qwerty",3)
 @app.route('/',methods=['GET'])
 def satus():
     dato={"status":"OK"}
-    asd = json.dumps(dato)
-    return asd
+    return jsonify(dato)
 
 @app.route('/ruta/<parametro>')
 def ruta(parametro):
     datos={ parametro : "Parametro reconocido"}
-    dat = json.dumps(dato)
-    return dat
+    return jsonify(datos)
 
 @app.route('/changeName/<newname>',methods=['GET'])
 def changeName(newname):
@@ -35,8 +33,8 @@ def changeAge(newage):
 
 @app.route('/showData')
 def showAll():
-    datos = json.dumps(inf.showData())
-    return datos
+    #datos = json.dumps(inf.showData())
+    return jsonify(inf.showData())
 
 
 if __name__ == "__main__":
