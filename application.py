@@ -7,8 +7,8 @@ app = Flask(__name__)
 inf = Informatic("Jota","qwerty",3)
 
 @app.route('/',methods=['GET'])
-def js():
-    dato={"status": "OK"}
+def satus():
+    dato={"status":"OK"}
     asd = json.dumps(dato)
     return asd
 
