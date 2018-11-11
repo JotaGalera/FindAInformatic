@@ -16,9 +16,8 @@ Los informáticos podrán crear/modificar su currículum, así como aceptar o de
 
 - Como lenguaje de programación se utilizará Python, es un lenguaje que está muy vivo en estos momentos y me gustaría aprender todo lo que pueda sobre él.
 - Se utilizará el framework "Flask" que nos permite crear aplicaciones web rápidamente. Además cuenta con licencia BSD(licencia de software libre permisiva).
-- Utilizaremos "virtualenv" como entorno virtual para python, es el recomendado para programar en este lenguaje, de esta manera aislaremos el proyecto de nuestro propio sistema.
 - Como base de datos en un principio pienso utilizar MariaDB(a la espera de un muy posible cambio a otro tipo, a poder ser "no relacional" para aprender a utilizarlas.)
-- Como infraestructura virtual , en un inicio partiremos de intentar utilizar Azure, abierto a cambios futuros.
+- Como infraestructura virtual utilizaremos Heroku. Ya que nos permitirá trabajar de forma gratuita(550 horas/mes). Heroku trabaja con "Dynos", unos contenedores que nos permiten la virtualización de nuestra aplicación.
 - Como herramienta de testeo para python se utilizará Pytest, ya que facilita mucho la ejecución de estos con una simple orden.
 
 
