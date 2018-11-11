@@ -21,19 +21,6 @@ Los informáticos podrán crear/modificar su currículum, así como aceptar o de
 - Como herramienta de testeo para python se utilizará Pytest, ya que facilita mucho la ejecución de estos con una simple orden.
 
 
-### Explicación de infraestructura:
-
-Azure permite compilar, implementar y administrar aplicaciones.
-
-Se selecciona la región de los datacenters donde estará tu servicio y el tipo de servicio.
-Seleccionas las características(RAM, espacio en disco, ...).
-
-Entre los servicios de Azure se dispone de infraestructuras(como máquinas virtuales, redes, ...) y plataformas. Todo ello con todo tipo de compatibilidad: Linux, Oracle, iOS, Andorid, etc.
-
-### Cómo llebar a cabo dicha infraestructura:
-
-[Guia a la espera de prueba](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)
-
 ### Descripción de la clase e Integración continua
 
 Hemos creado una clase inicial ("Informatic"), con una funcionalidad básica la cual realiza un return de true, esta funcionalidad se utiliza para comprobar el buen funcionamiento de nuestro test a través de Travis-CI. Además en dicha clase contiene los atributos de cada informático, nombre, curriculum y edad. Dicha clase ofrece la funcionalidad de modificar esos datos y/o de mostrarlos. Travis confirma que las funciones de modificación son correctas, mediante la comprobación del cambio y comparación de resultado(test_Status.py).
@@ -73,4 +60,23 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 [Documentación Heroku](https://jotagalera.github.io/FindAInformatic/Heroku)
 
 *  Enlace al despliegue provisional:[Despliegue](https://findainformatic.herokuapp.com/)
-En dicho enlace podemos comprobar que si añadimos a la url "/ruta/un-parametro-cualquiera" lo reconoce y lo muestra por pantalla(Ejemplo:[https://findainformatic.herokuapp.com/ruta/jota](https://findainformatic.herokuapp.com/ruta/jota))
+
+*  Reconocimiento de nombre: [/ruta/Javier](https://findainformatic.herokuapp.com/ruta/Javier)
+
+> Cambiando el nombre, "Javier", por cualquier otro lo reconoce.
+
+* Mostrar los datos de un usuario/informáticos (Preestablecido por ahora): [showData](https://findainformatic.herokuapp.com/changeName/NuevoNombre)
+
+> Muestra los datos de un ususario. Actualmente uno predefinido.
+
+* Modificar nombre de un usuario/informático: [changeName/NuevoNombre](https://findainformatic.herokuapp.com/changeName/NuevoNombre)
+
+> Modificando el parámetro "NuevoNombre" en la URL podemos modificar el nombre del usuario.
+
+* Modificar curriculum de un usuario/informático: [changeCv/NuevoCV](https://findainformatic.herokuapp.com/changeCv/NuevoCV)
+
+> Modificando el parámetro "NuevoCV" en la URL podemos modificar el curriculum del ususario.
+
+* Modificar edad de un usuario/informático: [changeAge/NuevaEdad](https://findainformatic.herokuapp.com/changeAge/NuevaEdad)
+
+> Modificando el parámetro "NuevaEdad" en la URL podemos modificar la edad del ususario.
