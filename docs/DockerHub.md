@@ -11,3 +11,7 @@ __Create__ > __create automated build__ > __create auto-build git hub__ > __"Rep
 
 * ***Cuarto***: Como resultado debemos obtener algo así:
 ![](./imgs/dockerHub.png)
+
+Para tratar con Ducker Hub en la terminal he utilizado esta  [Guia](https://docs.docker.com/engine/reference/commandline/login/#extended-description)
+
+Ahora vamos desplegar nuestro contenedor en: [Configuración y despliegue de un contenedor en Heroku](https://github.com/JotaGalera/FindAInformatic/blob/master/docs/Heroku.md)

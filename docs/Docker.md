@@ -74,4 +74,4 @@ Comprobamos las instalaciones con el comando make y el funcionamiento de la apli
 ![](./imgs/makeImage.png)
 ![](./imgs/p3Image.png)
 
-Ahora mediante [Docker Hub]() podremos desplegar en un PaaS nuestro contenedor.
+Ahora mediante [Docker Hub](https://github.com/JotaGalera/FindAInformatic/blob/master/docs/DockerHub.md) podremos desplegar en un PaaS nuestro contenedor.

@@ -31,3 +31,28 @@ web: gunicorn application:app
 * __Séptimo:__ Comprobamos que la aplicación funciona:
 
 ![https://findainformatic.herokuapp.com/](imgs/resultado2.png)
+
+# Configuración y despliegue de un contenedor en Heroku:
+
+Necesitaremos un token que nos proporcionará Heroku para iniciar sesión en el registro de Docker:
+
+* Obtención de Docker:
+> heroku auth:token
+
+![](./imgs/tokenHero.png)
+
+* Login Docker con el token:
+> docker login --username="usuario" --password="value token" registry.heroku.com
+
+![](./imgs/registerHeroToken.png)
+
+En nuestra cuenta de Heroku creamos una nueva aplicación y activamos el despliegue automático:
+![](./imgs/newappdock.png)
+![](./imgs/deployautodock.png)
+
+Por último subimos la imagen generada antes:
+>docker build -t registry.heroku.com/docker-findainformatic/web .
+>docker push registry.heroku.com/docker-findainformatic/web
+
+![](./imgs/dock1.png)
+![](./imgs/dock2.png)
