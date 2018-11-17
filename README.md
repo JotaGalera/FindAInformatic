@@ -67,7 +67,7 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 
 * Mostrar los datos de un usuario/informáticos (Preestablecido por ahora): [showData](https://findainformatic.herokuapp.com/showData)
 
-> Muestra los datos de un ususario. Actualmente uno predefinido.
+> Muestra los datos de un usuario. Actualmente uno predefinido.
 
 * Modificar nombre de un usuario/informático: [changeName/NuevoNombre](https://findainformatic.herokuapp.com/changeName/NuevoNombre)
 
@@ -75,8 +75,36 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 
 * Modificar curriculum de un usuario/informático: [changeCv/NuevoCV](https://findainformatic.herokuapp.com/changeCv/NuevoCV)
 
-> Modificando el parámetro "NuevoCV" en la URL podemos modificar el curriculum del ususario.
+> Modificando el parámetro "NuevoCV" en la URL podemos modificar el curriculum del usuario.
 
 * Modificar edad de un usuario/informático: [changeAge/NuevaEdad](https://findainformatic.herokuapp.com/changeAge/NuevaEdad)
 
-> Modificando el parámetro "NuevaEdad" en la URL podemos modificar la edad del ususario.
+> Modificando el parámetro "NuevaEdad" en la URL podemos modificar la edad del usuario.
+
+### Despligue sobre Heroku con contenedores Docker mediante DockerHub[![](https://www.herokucdn.com/deploy/button.svg)](https://docker-findainformatic.herokuapp.com/)
+
+* Documentación sobre Docker:
+* Documentación sobre DockerHub:
+* Documentación del despliegue en Heroku con Docker:
+
+*  Enlace al despliegue provisional:[Despliegue](https://docker-findainformatic.herokuapp.com/)
+
+*  Reconocimiento de nombre: [/ruta/Javier](https://docker-findainformatic.herokuapp.com/ruta/Javier)
+
+> Cambiando el nombre, "Javier", por cualquier otro lo reconoce.
+
+* Mostrar los datos de un usuario/informáticos (Preestablecido por ahora): [showData](https://docker-findainformatic.herokuapp.com/showData)
+
+> Muestra los datos de un ususario. Actualmente uno predefinido.
+
+* Modificar nombre de un usuario/informático: [changeName/NuevoNombre](https://docker-findainformatic.herokuapp.com/changeName/NuevoNombre)
+
+> Modificando el parámetro "NuevoNombre" en la URL podemos modificar el nombre del usuario.
+
+* Modificar curriculum de un usuario/informático: [changeCv/NuevoCV](https://docker-findainformatic.herokuapp.com/changeCv/NuevoCV)
+
+> Modificando el parámetro "NuevoCV" en la URL podemos modificar el curriculum del usuario.
+
+* Modificar edad de un usuario/informático: [changeAge/NuevaEdad](https://docker-findainformatic.herokuapp.com/changeAge/NuevaEdad)
+
+> Modificando el parámetro "NuevaEdad" en la URL podemos modificar la edad del usuario.

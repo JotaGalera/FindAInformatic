@@ -42,9 +42,9 @@ Necesitaremos un token que nos proporcionará Heroku para iniciar sesión en el 
 ![](./imgs/tokenHero.png)
 
 * Login Docker con el token:
-> docker login --username="usuario" --password="value token" registry.heroku.com
+> docker login --username=_ --password="value token" registry.heroku.com
 
-![](./imgs/registerHeroToken.png)
+![](./imgs/registerHeroLogin.png)
 
 En nuestra cuenta de Heroku creamos una nueva aplicación y activamos el despliegue automático:
 ![](./imgs/newappdock.png)
@@ -56,3 +56,8 @@ Por último subimos la imagen generada antes:
 
 ![](./imgs/dock1.png)
 ![](./imgs/dock2.png)
+
+Comprobamos que la aplicación se despliega:
+![](./imgs/despliegue.png)
+
+Realizado con ayuda de [Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
