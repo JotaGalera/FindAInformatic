@@ -87,7 +87,7 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 * Documentación sobre DockerHub:
 * Documentación del despliegue en Heroku con Docker:
 
-*  Enlace al despliegue provisional:[Despliegue](https://docker-findainformatic.herokuapp.com/)
+*  Enlace al despliegue provisional:[Contenedor](https://docker-findainformatic.herokuapp.com/)
 
 *  Reconocimiento de nombre: [/ruta/Javier](https://docker-findainformatic.herokuapp.com/ruta/Javier)
 
