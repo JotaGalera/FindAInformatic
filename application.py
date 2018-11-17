@@ -11,6 +11,12 @@ def satus():
     dato={"status":"OK"}
     return jsonify(dato)
 
+@app.route('/status',methods=['GET'])
+def satus2():
+    dato={"status":"OK"}
+    return jsonify(dato)
+
+
 @app.route('/ruta/<parametro>')
 def ruta(parametro):
     datos={ parametro : "Parametro reconocido"}
