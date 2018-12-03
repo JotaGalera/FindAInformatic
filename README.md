@@ -83,8 +83,8 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 
 ### Despligue sobre Heroku con contenedores Docker mediante DockerHub[![](https://www.herokucdn.com/deploy/button.svg)](https://docker-findainformatic.herokuapp.com/)
 
-* Documentación sobre Docker:
-* Documentación sobre DockerHub:
+* Documentación sobre Docker:[Docker info](https://jotagalera.github.io/FindAInformatic/Docker)
+* Documentación sobre DockerHub:[DockerHub info](https://jotagalera.github.io/FindAInformatic/DockerHub)
 * Documentación del despliegue en Heroku con Docker:
 * [Enlace a DockerHub](https://hub.docker.com/r/javier1994/findainformatic/)
 *  Contenedor: [FindAInformatic](https://docker-findainformatic.herokuapp.com/)
