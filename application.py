@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 inf = Informatic("Jota","qwerty",3)
 
-@app.route('/',methods=['GET'])
+@app.route('/')
 def satus():
     dato={"status":"OK"}
     return jsonify(dato)
 
-@app.route('/status',methods=['GET'])
+@app.route('/status')
 def satus2():
     dato={"status":"OK"}
     return jsonify(dato)
@@ -22,17 +22,17 @@ def ruta(parametro):
     datos={ parametro : "Parametro reconocido"}
     return jsonify(datos)
 
-@app.route('/changeName/<newname>',methods=['GET'])
+@app.route('/changeName/<newname>',methods=['POST'])
 def changeName(newname):
     cambio = inf.changeName(newname)
     return "Nombre Cambiado: "+cambio
 
-@app.route('/changeCv/<newcv>',methods=['GET'])
+@app.route('/changeCv/<newcv>',methods=['POST'])
 def changeCv(newcv):
     cambio = inf.changeCv(newcv)
     return "Cambio CV: "+cambio
 
-@app.route('/changeAge/<newage>',methods=['GET'])
+@app.route('/changeAge/<newage>',methods=['POST'])
 def changeAge(newage):
     cambio = inf.changeAge(newage)
     return "Cambio de la edad: "+cambio
