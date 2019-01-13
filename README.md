@@ -108,3 +108,7 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 * Modificar edad de un usuario/informático: [changeAge/NuevaEdad](https://docker-findainformatic.herokuapp.com/changeAge/NuevaEdad)
 
 > Modificando el parámetro "NuevaEdad" en la URL podemos modificar la edad del usuario.
+
+# Despliegue en un LaaS
+
+Documentación para Laas
