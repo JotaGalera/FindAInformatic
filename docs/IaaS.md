@@ -133,6 +133,4 @@ def RemoveAll():
 ~~~~
 
 
-Ahora toca modificar nuestro Vagrantfile para que se realice t
-Documentación: https://github.com/mitchellh/vagrant-google
-Documentación: https://jpporcel.github.io/Proyecto-Elliot/
+
