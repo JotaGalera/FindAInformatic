@@ -31,15 +31,19 @@ Creamos nuestro proyecto , FindAInformatic en Google Cloud:
 ![](imgs/newPGC.png)
 
 
+***ESTA PARTE ES OPCIONAL***, puesto que Vagrant se ocupará de crear una instancia:
 
-
-Además elegimos un sistema operativo para el arranque, el destino del servidor(en mi caso Belgica es de Europa, el más barato) y acto seguido empezará a crear la instancia(Opcional , puesto que con Vagrant se creará una instancia propia al realizar el vagrant up):
+Elegimos un sistema operativo para el arranque, el destino del servidor(en mi caso Belgica es de Europa, el más barato) y acto seguido empezará a crear la instancia:
 
 ![](imgs/createPGC.png)
 
 Ya tenemos nuestra instancia:
 
 ![](imgs/instancia.png)
+
+---------
+
+La siguiente herramienta es recomendable utilices vagrant o crees la instancia tú mismo, de esta manera se creará directamente una clave para nuestro proyecto y evitaremos tener que crear nosotros mismo el par de claves.
 
 Para podernos conectar por ssh a desde nuestro host directamente a la MV de Google Cloud necesitaremos otra herramienta:[SDK de Google Cloud](https://cloud.google.com/sdk/install)
 
@@ -63,15 +67,15 @@ Antes de seguir con el despliegue, debemos de añadir ciertas credenciales a nue
 
 ![](imgs/credenciales.png)
 
-Estas credenciales nos servirán para configurar parte del Vagrantfile, como bien nos exiplican en su repositorio el autor del plugin vagrant-google.
+Estas credenciales nos servirán para configurar parte del Vagrantfile, como bien nos explican en su repositorio el autor del plugin vagrant-google.
 
-Partimos de que ya tenemos Vagrant instalada en nuestra máquina por tanto nos saltaremos ese paso.
+Partimos de que ya tenemos Vagrant instalado en nuestra máquina por tanto nos saltaremos ese paso.
 
 Para instalar el plugin de Vagrant-google también queda especificado arriba.
 
 Una vez finalazada la instalación, pasamos a la configuración de nuestro Vagrantfile(Como hemos documentado en su documento todo lo referido a Vagrant y Ansible, solo comentaremos la nueva parte, la de Google):
 
-[FUENTE DEL ARCHIVO](sudo apt install build-essential)
+[FUENTE DEL ARCHIVO](https://github.com/mitchellh/vagrant-google)
 ~~~~
 
 Vagrant.configure("2") do |config|
@@ -98,7 +102,7 @@ Este será el esqueleto de nuestro Vagrantfile, simplemente lo modificaremos con
 
 Los 3 primeros datos los obtenemos del archivo de credenciales que obtuvimos antes.
 
-Las dos siguiente lineas son simplemente el usuario con el que conectaremos mediante ssh y el path de la key privada con la que conectamos el proyecto, en mi caso, al utilizar gcloud se genera automatico cuando realizamos la configuracion de ssh.
+Las dos siguiente lineas son simplemente el usuario con el que conectaremos mediante ssh y el path de la key privada con la que conectamos el proyecto, en mi caso, al utilizar gcloud se genera automático cuando realizamos la configuración de ssh.
 
 ~~~~
 override.ssh.username = $USER
