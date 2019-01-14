@@ -113,4 +113,4 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 
 [Documentación para Iaas](https://jotagalera.github.io/FindAInformatic/IaaS)
 
-Despliegue final: [35.224.37.217](http://35.224.37.217/status)
+Despliegue final: 35.224.37.217
