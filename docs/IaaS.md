@@ -26,7 +26,6 @@ Para facilitar futuras modificaciones en las MV y demás, podemos utilizar [Clou
 
 Lo primero es crear la cuenta para [Google Cloud](https://cloud.google.com/), en dos simples pasos en la página podrás registrarte. Tendrás que dar la cuenta bancaria para iniciar la cuenta gratuita, pero podrás darla de baja, ya que te dan 300$ y 12 meses gratis.
 
-
 Creamos nuestro proyecto , FindAInformatic en Google Cloud:
 
 ![](imgs/newPGC.png)
@@ -34,7 +33,7 @@ Creamos nuestro proyecto , FindAInformatic en Google Cloud:
 
 
 
-Además elegimos un sistema operativo para el arranque, el destino del servidor(en mi caso Belgica es de Europa, el más barato) y acto seguido empezará a crear la instancia:
+Además elegimos un sistema operativo para el arranque, el destino del servidor(en mi caso Belgica es de Europa, el más barato) y acto seguido empezará a crear la instancia(Opcional , puesto que con Vagrant se creará una instancia propia al realizar el vagrant up):
 
 ![](imgs/createPGC.png)
 
@@ -102,7 +101,7 @@ Los 3 primeros datos los obtenemos del archivo de credenciales que obtuvimos ant
 Las dos siguiente lineas son simplemente el usuario con el que conectaremos mediante ssh y el path de la key privada con la que conectamos el proyecto, en mi caso, al utilizar gcloud se genera automatico cuando realizamos la configuracion de ssh.
 
 ~~~~
-override.ssh.username = "USERNAME"
+override.ssh.username = $USER
 override.ssh.private_key_path = "~/.ssh/google_compute_engine"
 ~~~~
 
@@ -121,16 +120,23 @@ def Install():
 
 def Start():
   with cd("~/FindAInformatic/"):
-    run('gunicorn application:app')
+    run('sudo gunicorn --bind 0.0.0.0:80 application:app')
     run('pgrep gunicorn > ~/id.tx') //Para asegurarnos que tenemos controlado cual es nuestro gunicorn
 
 def Stop(): //Leemos el PID de nuestro gunicorn y lo matamos
   run(' var=$(head -1 ~/id.txt) ')
-  run(' kill $var')
+  run(' sudo kill $var')
 
 def RemoveAll():
-  rm -r ~/*
+  run ('sudo rm -r ~/*')
 ~~~~
 
+Por último mostraremos el despliegue de la máquina en funcionamiento:
 
+  - Mediante el comando:
+    - fab -f fabfile.py -H jota@35.208.147.245 Start (Iniciar)
+    - fab -f fabfile.py -H jota@35.208.147.245 Stop  (Detener)
+    - fab -f fabfile.py -H jota@35.208.147.245 RemoveAll  (Limpiar instancia)
+    - fab -f fabfile.py -H jota@35.208.147.245 Install (Instala dependencias)
 
+![](despliegue.png)
