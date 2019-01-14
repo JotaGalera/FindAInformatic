@@ -1,10 +1,10 @@
-# Documentación del despliegue en IaaS(Azure)
+# Documentación del despliegue en IaaS(Google Cloud)
 
-1. Realizarlo de forma local.
+1. De forma loca.
 
 Para evitar trabajos erróneos y futuras sorpresas en el despliegue final, primeramente lo realizaremos de forma local gracias a una herramienta que nos permite crear un entorno aislado de programación.De esta manera si reventase algo, no tendría por qué afectar al resto de trabajos, acabaríamos borrando ese entorno y volviendo a empezar.
 
-Omitiré la propia instalación de Vagrant pero dejaré en este enlace una documentación de como configurar correctamente Vagrant para tenerlo todo perfectamente preparado, [GUIA VAGRANT](www.github.com...)
+Omitiré la propia instalación de Vagrant pero dejaré en este enlace una documentación de como configurar correctamente Vagrant para tenerlo todo perfectamente preparado, [GUIA VAGRANT](https://jotagalera.github.io/FindAInformatic/Vagrant)
 
 2. Pasaremos ahora al despliegue en el IaaS(Google Cloud).
 
@@ -134,9 +134,9 @@ def RemoveAll():
 Por último mostraremos el despliegue de la máquina en funcionamiento:
 
   - Mediante el comando:
-    - fab -f fabfile.py -H jota@35.208.147.245 Start (Iniciar)
-    - fab -f fabfile.py -H jota@35.208.147.245 Stop  (Detener)
-    - fab -f fabfile.py -H jota@35.208.147.245 RemoveAll  (Limpiar instancia)
-    - fab -f fabfile.py -H jota@35.208.147.245 Install (Instala dependencias)
+    - fab -f fabfile.py -H jota@35.224.37.217 Start (Iniciar)
+    - fab -f fabfile.py -H jota@35.224.37.217 Stop  (Detener)
+    - fab -f fabfile.py -H jota@35.224.37.217 RemoveAll  (Limpiar instancia)
+    - fab -f fabfile.py -H jota@35.224.37.217 Install (Instala dependencias)
 
-![](despliegue.png)
+![](imgs/despliegueGC.png)

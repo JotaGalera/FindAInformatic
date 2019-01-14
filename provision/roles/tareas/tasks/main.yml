@@ -1,0 +1,6 @@
+- name: clon
+  git:  repo=https://github.com/JotaGalera/FindAInformatic.git dest=FindAInformatic/ clone=yes force=yes
+  tags: clon
+
+- name: install repo
+  command: pip3 install -r FindAInformatic/requirements.txt

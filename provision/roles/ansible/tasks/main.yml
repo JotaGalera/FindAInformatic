@@ -1,0 +1,11 @@
+- name: install python
+  apt: name=python-setuptools state=present update_cache=yes
+  tags: ansible
+
+- name: install pip
+  command: easy_install pip
+  tags: ansible
+
+- name: install ansible
+  command: pip install ansible
+  tags: ansible

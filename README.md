@@ -109,6 +109,8 @@ La documentación sobre cómo se despliega el proyecto en Heroku se encuentra en
 
 > Modificando el parámetro "NuevaEdad" en la URL podemos modificar la edad del usuario.
 
-# Despliegue en un LaaS
+# Despliegue en un IaaS
 
-Documentación para Laas
+[Documentación para Iaas](https://jotagalera.github.io/FindAInformatic/IaaS)
+
+Despliegue final: [35.224.37.217](http://35.224.37.217/status)

@@ -1,0 +1,11 @@
+- name: install git
+  apt: name=git state=present
+  tags: git
+
+- name: install py3
+  command: sudo apt-get install -y python3-pip
+  tags: py3
+
+- name: install fabric
+  pip: name=fabric state=present
+  tags: fabr
